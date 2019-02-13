@@ -1,0 +1,22 @@
+{
+  "name": "QrBarReader",
+  "version": "0.1.0",
+  "summary": "A short description of QrBarReader.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/digitalbrain@hotmail.it/QrBarReader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "digitalbrain@hotmail.it": "digitalbrain@hotmail.it"
+  },
+  "source": {
+    "git": "https://github.com/digitalbrain@hotmail.it/QrBarReader.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QrBarReader/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_QrBarReader_Example {
+  umbrella header "Pods-QrBarReader_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
