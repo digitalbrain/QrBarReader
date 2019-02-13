@@ -8,13 +8,13 @@
 import UIKit
 import AVFoundation
 
-class ReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+open class ReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
    
     var session: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var didCaputreCode: ((_ code: String) -> ())?
    
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         session = AVCaptureSession()
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
@@ -44,7 +44,7 @@ class ReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         session.startRunning()
     }
     
-    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    open func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if let barcodeData = metadataObjects.first as? AVMetadataMachineReadableCodeObject {
             if let code = barcodeData.stringValue {
                 self.didCaputreCode?(code)
