@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QrBarReader_Example' do
+  pod 'QrBarReader', :path => '../'
+
+  target 'QrBarReader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
